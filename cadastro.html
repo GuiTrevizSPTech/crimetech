@@ -7,12 +7,22 @@
 </head>
 <body>
     <div class="div-cadastro">
+        <h3>Faça o seu cadastro aqui!</h3>
         <label for="ipt_nome">Nome do Usuário:</label>
         <input type="text" id="ipt_nome_usuario">
-        <label for="ipt_email">E-mail do Usuário:</label>
+        <label for="ipt_email">E-mail:</label>
         <input type="email" id="ipt_email_usuário">
-        <label for="ipt_senha">Senha do Usuário:</label>
+        <label for="ipt_senha">Senha:</label>
         <input type="password" id="ipt_senha_usuario">
+
+        <button onclick="cadastrar()">Cadastrar!</button>
     </div>
 </body>
+<script>
+    function cadastrar(){
+        let nomeUsuario = document.getElementById('ipt_nome_usuario').value;
+
+        alert(`Obrigado por se cadastrar ${nomeUsuario}`)
+    }
+</script>
 </html>
